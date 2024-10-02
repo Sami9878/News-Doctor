@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Doctor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>News Doctor</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="world.html">World</a></li>
+                <li><a href="tec.html">Technology</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="en.html">Entertainment</a></li>
+                <li class="sam"><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="search-bar" placeholder="Search articles..." onkeyup="searchArticles()">
+    </header>
+    <section class="hero">
+        <h2>Latest News Headlines</h2>
+        <p>Your daily dose of updates and insights.</p>
+    </section>
+    <main>
+        <section id="news-container">
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200" alt="News Image 1">
+                <h2>Article Title 1</h2>
+                <p>Brief description of the news article goes here...</p>
+                <button onclick="openModal('Article Title 1', 'Detailed description of the news article 1...')">Read More</button>
+            </article>
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200" alt="News Image 2">
+                <h2>Article Title 2</h2>
+                <p>Brief description of the news article goes here...</p>
+                <button onclick="openModal('Article Title 2', 'Detailed description of the news article 2...')">Read More</button>
+            </article>
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200" alt="News Image 3">
+                <h2>Article Title 3</h2>
+                <p>Brief description of the news article goes here...</p>
+                <button onclick="openModal('Article Title 3', 'Detailed description of the news article 3...')">Read More</button>
+            </article>
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200" alt="News Image 4">
+                <h2>Article Title 4</h2>
+                <p>Brief description of the news article goes here...</p>
+                <button onclick="openModal('Article Title 4', 'Detailed description of the news article 4...')">Read More</button>
+            </article>
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200" alt="News Image 5">
+                <h2>Article Title 5</h2>
+                <p>Brief description of the news article goes here...</p>
+                <button onclick="openModal('Article Title 5', 'Detailed description of the news article 5...')">Read More</button>
+            </article>
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200" alt="News Image 6">
+                <h2>Article Title 6</h2>
+                <p>Brief description of the news article goes here...</p>
+                <button onclick="openModal('Article Title 6', 'Detailed description of the news article 6...')">Read More</button>
+            </article>
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x200" alt="News Image 1">
+                <h2>Article Title 1</h2>
+                <p>Brief description of the news article goes here...</p>
+                <button onclick="openModal('Article Title 1', 'Detailed description of the news article 1...')">Read More</button>
+            </article>
+        </section>
+    </main>
+
+    <!-- Modal for detailed view -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 News Doctor. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
